@@ -15,7 +15,8 @@ public class Agenda {
      * Constructor que inicializa la lista de contactos.
      */
     private List<Contacto> contacts; // Lista de Contacto
-     /** Añade un contacto a la agenda. Si el contacto ya existe, añade el número de teléfono al contacto existente. */
+     /**
+      * Añade un contacto a la agenda. Si el contacto ya existe, añade el número de teléfono al contacto existente. */
 
     public Agenda() {
         this.contacts = new ArrayList<>();
@@ -39,7 +40,11 @@ public class Agenda {
             contacts.add(newContact);
         }
     }
-
+    /**
+     * Elimina un contacto de la agenda por su nombre.
+     *
+     * @param name el nombre del contacto a eliminar
+     */
     public void removeContact(String name) {
         Iterator<Contacto> it = contacts.iterator();
 
